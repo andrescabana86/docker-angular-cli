@@ -12,4 +12,4 @@ RUN apk update \
   && yarn cache clean \
   && sed -i -e "s/bin\/ash/bin\/sh/" /etc/passwd
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT "/bin/sh"
